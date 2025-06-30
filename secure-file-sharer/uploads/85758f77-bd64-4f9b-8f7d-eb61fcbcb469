@@ -1,0 +1,13 @@
+print("hello",qoute=FALSE)
+help()
+x <- c(70, 78, 90, 87, 84, 86, 91, 74, 83, 85)
+y <- c(90, 94, 79, 86, 84, 83, 88, 92, 76, 75)
+cor.test(x, y, method = 'spearman')
+Spearman's rank correlation rho
+data:  x and y
+S = 234, p-value = 0.2324
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+rho
+#define data frame
+df <- data.frame(team=c('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'),

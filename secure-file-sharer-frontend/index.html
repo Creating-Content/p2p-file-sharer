@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <!-- Tailwind CSS CDN for simplicity in this demo. For production, consider a build tool. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'primary-blue': '#4A90E2',
+              'secondary-gray': '#F2F5F8',
+              'text-gray': '#6B7280',
+              'accent-green': '#10B981',
+              'error-red': '#EF4444',
+            }
+          }
+        }
+      }
+    </script>
+    </head>
+  <body>
+    <div id="root"></div>
+    <!-- QRious library for QR Code generation - placed at the end of body for guaranteed loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
